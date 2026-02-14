@@ -1,3 +1,13 @@
+## Actividad 4
+
+**Enunciado**  
+En una escuela, los directivos necesitan crear un programa para control escolar que permita manejar profesores, alumnos, cursos y materias. Los datos que se registran para cada caso son los siguientes:
+Profesores. Nombre, número de nómina, sueldo por hora y materia que imparten. Un profesor solo puede impartir una materia, pero puede darse de alta antes de tener una ya asignada; además, el sueldo semanal de cada docente depende del número de horas que imparte su materia, así como de su sueldo por hora.
+Alumnos. Matrícula, nombre, edad y el curso en el que está inscrito.
+Materias y cursos. Las materias cuentan con nombre, clave, número de créditos que amparan y cantidad de horas semanales que se imparten. Por su parte, cada curso tiene un nombre y está formado siempre por tres materias, cuyos créditos se suman para obtener el del curso que integran.
+
+**Codigo**  
+````java
 package actividad_4;
 
 import java.util.Scanner;
@@ -474,3 +484,378 @@ public class Act4 {
     sc.close();
     }
 }
+````
+
+**Salida Real**
+````text
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 1
+
+=== MENÚ ALUMNOS ===
+1 Mostrar Alumnos
+2 Añadir Alumnos
+3 Eliminar ALumnos
+4 Modificar Alumnos
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando alumnos
+0 -> A1 Carlos 19
+1 -> A2 Laura 20
+2 -> A3 Miguel 18
+
+=== MENÚ ALUMNOS ===
+1 Mostrar Alumnos
+2 Añadir Alumnos
+3 Eliminar ALumnos
+4 Modificar Alumnos
+5 Salir
+Que opcion quieres elegir: 2
+Añadiendo Alumno
+Matricula:A4
+Nombre:Angel
+Edad:18
+
+=== MENÚ ALUMNOS ===
+1 Mostrar Alumnos
+2 Añadir Alumnos
+3 Eliminar ALumnos
+4 Modificar Alumnos
+5 Salir
+Que opcion quieres elegir: 4
+Modificando alumnos
+Alumnos disponibles:
+0 -> A1 Carlos 19
+1 -> A2 Laura 20
+2 -> A3 Miguel 18
+3 -> A4 Angel 18
+Cual quieres modificar?: 3
+Nueva matricula: A4
+Nuevo nombre: angel
+Nueva edad: 19
+Cursos disponibles:
+0 -> Curso:Curso 0 Creditos:12
+1 -> Curso:Curso 1 Creditos:12
+2 -> Curso:Curso 2 Creditos:12
+Selecciona curso: 1
+
+=== MENÚ ALUMNOS ===
+1 Mostrar Alumnos
+2 Añadir Alumnos
+3 Eliminar ALumnos
+4 Modificar Alumnos
+5 Salir
+Que opcion quieres elegir: 3
+Eliminando alumno
+Alumnos disponibles:
+0 -> A1 Carlos 19
+1 -> A2 Laura 20
+2 -> A3 Miguel 18
+3 -> A4 angel 19
+Cual quieres eliminar?: 3
+
+=== MENÚ ALUMNOS ===
+1 Mostrar Alumnos
+2 Añadir Alumnos
+3 Eliminar ALumnos
+4 Modificar Alumnos
+5 Salir
+Que opcion quieres elegir: 5
+Saliendo...
+
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 2
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando Profesores
+0 -> Ana Lopez P1 $900.0 Programacion
+1 -> Luis Perez P2 $900.0 Matematicas
+2 -> Maria Cruz P3 $680.0 Fisica
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 2
+Añadiendo Profesor
+Nombre:Angel
+Nomina:P4
+SueldoHora:50
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 4
+Modificando profesores
+Profesores disponibles:
+0 -> Ana Lopez P1 $900.0 Programacion
+1 -> Luis Perez P2 $900.0 Matematicas
+2 -> Maria Cruz P3 $680.0 Fisica
+3 -> Angel P4 $0.0
+Cual quieres modificar?: 3
+Nuevo nombre: Angel
+Nueva nomina: P4
+Nuevo sueldo hora: 100
+Materias disponibles:
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+Materia a asignar: 1
+Horas semanales: 5
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando Profesores
+0 -> Ana Lopez P1 $900.0 Programacion
+1 -> Luis Perez P2 $900.0 Matematicas
+2 -> Maria Cruz P3 $680.0 Fisica
+3 -> Angel P4 $500.0 Matematicas
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 3
+Eliminando Profesor
+Profesores disponibles:
+0 -> Ana Lopez P1 $900.0 Programacion
+1 -> Luis Perez P2 $900.0 Matematicas
+2 -> Maria Cruz P3 $680.0 Fisica
+3 -> Angel P4 $500.0 Matematicas
+Cual quieres eliminar?: 3
+
+=== MENÚ PROFESORES ===
+1 Mostrar Profesores
+2 Añadir Profesores
+3 Eliminar Profesores
+4 Modificar Profesores
+5 Salir
+Que opcion quieres elegir: 5
+saliendo...
+
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 4
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando materias
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 2
+Añadiendo materia
+Nombre:Ingles
+Clave:igl
+Creditos:2
+Horas:6
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 4
+Materias disponibles:
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+3 -> Ingles igl Cred:2 Horas:6
+Cual quieres modificar?: 3
+Nuevo nombre: Ingles
+Nueva clave: IGL
+Nuevos creditos: 2
+Nuevas horas: 6
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 5
+Saliendo...
+
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 3
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando cursos
+0 -> Curso:Curso 0 Creditos:12
+1 -> Curso:Curso 1 Creditos:12
+2 -> Curso:Curso 2 Creditos:12
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 2
+Añadiendo cursos
+Nombre del curso: Curso 3
+Selecciona 3 materias (indices):
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+3 -> Ingles IGL Cred:2 Horas:6
+3
+2
+0
+Curso agregado
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 3
+Modificando cursos
+0 -> Curso:Curso 0 Creditos:12
+1 -> Curso:Curso 1 Creditos:12
+2 -> Curso:Curso 2 Creditos:12
+3 -> Curso:Curso 3 Creditos:10
+Cual quieres modificar?: 3
+Nuevo nombre: Curso 3
+Selecciona 3 materias:
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+3 -> Ingles IGL Cred:2 Horas:6
+3
+0
+2
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 1
+Mostrando cursos
+0 -> Curso:Curso 0 Creditos:12
+1 -> Curso:Curso 1 Creditos:12
+2 -> Curso:Curso 2 Creditos:12
+3 -> Curso:Curso 3 Creditos:10
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 4
+Eliminar curso
+0 -> Curso:Curso 0 Creditos:12
+1 -> Curso:Curso 1 Creditos:12
+2 -> Curso:Curso 2 Creditos:12
+3 -> Curso:Curso 3 Creditos:10
+Cual quieres eliminar?: 3
+Curso eliminado
+
+=== MENÚ CURSOS ===
+1 Mostrar Cursos
+2 Añadir Cursos
+3 Modificar Cursos
+4 Eliminar Cursos
+5 Salir
+Que opcion quieres elegir: 5
+Saliendo...
+
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 4
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 3
+Eliminando materia
+Materias disponibles:
+0 -> Programacion PRO Cred:5 Horas:6
+1 -> Matematicas MAT Cred:4 Horas:5
+2 -> Fisica FIS Cred:3 Horas:4
+3 -> Ingles IGL Cred:2 Horas:6
+Que materia quieres eliminar?: 3
+
+=== MENÚ MATERIAS ===
+1 Mostrar Materias
+2 Añadir Materias
+3 Eliminar Materias
+4 Modificar Materias
+5 Salir
+Que opcion quieres elegir: 5
+Saliendo...
+
+=== MENÚ ESCUELA ===
+1. Administrar Alumnos
+2. Administrar Profesores
+3. Administrar Cursos
+4. Administrar Materias
+5. Salir
+Que opcion quieres elegir: 5
+````
